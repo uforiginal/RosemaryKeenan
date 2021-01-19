@@ -3,58 +3,16 @@
     <div id="billboard">
       <img src="./assets/me-professional.jpg" id="avatar"/>
     </div>
-    <div id="content">
-      <b-card-group deck align="center">
-        <b-card
-          title="Work Expirience"
-          tag="article"
-          style="max-width: 20rem; background-color: #ffe6e6;"
-          class="mb-3"
-          >
-          <b-card-text>View my past positions at various organizations</b-card-text>
-          <b-button style="background-color: rosybrown;"><b-icon icon="star-fill"></b-icon></b-button>
-        </b-card>
-        <b-card
-          title="Community Work"
-          tag="article"
-          style="max-width: 20rem; background-color: #ffe6e6;"
-          class="mb-3"
-          >
-          <b-card-text>See how I give back to my community</b-card-text>
-          <b-button style="background-color: rosybrown;"><b-icon icon="star-fill"></b-icon></b-button>
-        </b-card>
-      </b-card-group>
-      <b-card-group deck>
-        <b-card
-            title="Education"
-            tag="article"
-            style="max-width: 20rem; background-color: #ffe6e6;"
-            class="mb-3"
-            >
-          <b-card-text>A brief history of my educational background</b-card-text>
-          <b-button style="background-color: rosybrown;"><b-icon icon="star-fill"></b-icon></b-button>
-        </b-card>
-        <b-card
-            title="Acknowledgements"
-            tag="article"
-            style="max-width: 20rem; background-color: #ffe6e6;"
-            class="mb-3"
-            >
-          <b-card-text>Click here to view some of the generous awards and acknowledgements I've recieved</b-card-text>
-          <b-button style="background-color: rosybrown;"><b-icon icon="star-fill"></b-icon></b-button>
-        </b-card>
-      </b-card-group>
-    </div>
+    <Content id="content"/>
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-//import About from './components/About.vue'
-//import Resume from './components/Resume.vue'
+import Content from './components/Content.vue'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Content}
 }
 </script>
 
