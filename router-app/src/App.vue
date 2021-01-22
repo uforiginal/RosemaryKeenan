@@ -45,9 +45,9 @@ export default {
   border-style: double;
   width: 200px;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
   margin-right: 80%;
-  margin-top: 10%; 
+  margin-top: 10%;
 }
 
 b-card-group {

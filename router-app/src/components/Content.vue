@@ -45,9 +45,9 @@
 </template>
 
 <script>
-//import HelloWorld from '../components/HelloWorld.vue'
-//import About from '../components/About.vue'
-//import Resume from '../components/Resume.vue'
+// import HelloWorld from '../components/HelloWorld.vue'
+// import About from '../components/About.vue'
+// import Resume from '../components/Resume.vue'
 
 export default {
   name: 'Content'
