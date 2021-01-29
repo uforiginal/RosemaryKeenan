@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <div id="billboard">
+    <header id="billboard">
       <img src="./assets/me-professional.jpg" id="avatar"/>
+    </header>
+    <div id='content'>
+      <router-view></router-view>
     </div>
-    <Content id="content"/>
   </div>
 </template>
 
 <script>
-import Content from './components/Content.vue'
-
+import Content from '@/components/Content.vue'
 export default {
   name: 'App',
-  components: {Content}
+  components: { Content }
 }
 </script>
 
@@ -24,15 +25,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   background-color: bisque;
+  margin: 0 auto;
 }
 
 #billboard{
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   width: 100%;
   background-image: url("./assets/BeBrilliantNeon.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80% 100%;
+  /*background-size: 80% 100%;*/
 }
 
 #content{
@@ -48,9 +50,5 @@ export default {
   object-fit: cover;
   margin-right: 80%;
   margin-top: 10%;
-}
-
-b-card-group {
-  margin: 0 auto;
 }
 </style>

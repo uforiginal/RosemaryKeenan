@@ -2,7 +2,7 @@
     <div id="about">
         <h3>About Me</h3>
         <div class="text">
-            <p>I have no clue how to start this, will come back to it. 
+            <p>I have no clue how to start this, will come back to it.
             </p>
         </div>
     </div>

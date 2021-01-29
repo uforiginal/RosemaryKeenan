@@ -9,7 +9,7 @@
           class="mb-3"
           >
           <b-card-text>View my past positions at various organizations</b-card-text>
-          <b-button v-on:click="toggle(resume)" style="background-color: rosybrown;" ><b-icon icon="star-fill"></b-icon></b-button>
+          <router-link to="/resume"><b-button style="background-color: rosybrown;" ><b-icon icon="star-fill"></b-icon></b-button></router-link>
         </b-card>
         <b-card
           title="Community Work"

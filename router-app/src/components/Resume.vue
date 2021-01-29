@@ -1,17 +1,9 @@
 <template>
     <div id="resume">
         <h3>Resume</h3>
-        <div class="text">
-            <h2>Education</h2>
-            <div class="text"><p>education</p></div>
-            <h2>Work Expirience</h2>
-            <div class="text"><p>work expirience</p></div>
-            <h2>Community Work</h2>
-            <div class="text"><p>community</p></div>
-            <h2>Honors and Accolades</h2>
-            <div class="text"><p>awards</p></div>
-            <h2>Skills</h2>
-            <div class="images"></div>
+        <div>
+          <embed src="../assets/test.pdf" width="100%" height="600px" />
+          <router-link to="/"><b-button style="background-color: rosybrown;" ><b-icon icon="star-fill"></b-icon></b-button></router-link>
         </div>
     </div>
 </template>
@@ -28,6 +20,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#resume{
+  margin: 0 auto;
 }
 </style>
