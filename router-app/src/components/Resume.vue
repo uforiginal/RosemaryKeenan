@@ -2,14 +2,19 @@
     <div id="resume">
         <h3>Resume</h3>
         <div>
-          <embed src="../assets/test.pdf" width="100%" height="600px" />
+          <pdf src='./static/test.pdf'/>
           <router-link to="/"><b-button style="background-color: rosybrown;" ><b-icon icon="star-fill"></b-icon></b-button></router-link>
         </div>
     </div>
 </template>
 <script>
+import pdf from 'vue-pdf'
+
 export default {
-  name: 'Resume'
+  name: 'Resume',
+  components: {
+    pdf
+  }
 }
 </script>
 
@@ -23,5 +28,12 @@ export default {
 }
 #resume{
   margin: 0 auto;
+}
+#billboard{
+  /*margin-bottom: 5%;*/
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: 80% 100%;*/
 }
 </style>
