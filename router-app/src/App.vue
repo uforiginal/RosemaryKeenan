@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <header id="billboard">
-      <img src="./assets/me-professional.jpg" id="avatar"/>
-    </header>
+    <h1>Rosemary Keenan</h1>
     <div id='content'>
       <router-view></router-view>
     </div>
@@ -18,23 +16,20 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background-color: bisque;
+  color: white;
   margin: 0 auto;
+  background-image: url('./assets/LEDHex.jpg');
+  background-size: cover;
 }
 
 #billboard{
   /*margin-bottom: 5%;*/
   width: 100%;
-  background-image: url("./assets/BeBrilliantNeon.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  /*background-size: 80% 100%;*/
 }
 
 #content{
@@ -42,13 +37,18 @@ export default {
   width: 50%;
 }
 
-#avatar{
-  border-radius: 80%;
-  border-style: double;
-  width: 200px;
+#head-img{
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
+}
+
+h1{
+  width: 100%;
   margin-right: 80%;
-  margin-top: 10%;
+  padding-top: 3%;
+  /* text-shadow: 2px 2px 6px #fdfdfd;*/
+  text-align: left;
+  font-family: "Exo-2", sans-serif;
+  font-size: 7rem;
 }
 </style>
