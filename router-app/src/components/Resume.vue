@@ -6,7 +6,9 @@
       </div>
       <div class="display">
         <pdf id="pdf" src='./static/test.pdf'/>
+        <a href="./static/test.pdf" download="RKResume">
         <b-button variant="dark">Download Resume</b-button>
+        </a>
       </div>
     </div>
 </template>
