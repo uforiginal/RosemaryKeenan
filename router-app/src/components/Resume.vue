@@ -1,10 +1,13 @@
 <template>
     <div id="resume">
-        <h3>Resume</h3>
-        <div>
-          <pdf src='./static/test.pdf'/>
-          <router-link to="/"><b-button style="background-color: rosybrown;" ><b-icon icon="star-fill"></b-icon></b-button></router-link>
-        </div>
+      <div class="text" id="intro">
+        <h3><em>Hello!</em></h3>
+        <p>I’m an ambitious software developer from Omaha, Nebraska. I graduated from the University of Nebraska at Omaha in December of 2020 and now I’m trying to find my next big project. If you’re looking for a dedicated developer, whether for your company, organization, or event, please take a look at my resume! I’d love to be a part of your vision, hope to hear from your soon!</p>
+      </div>
+      <div class="display">
+        <pdf id="pdf" src='./static/test.pdf'/>
+        <b-button variant="dark">Download Resume</b-button>
+      </div>
     </div>
 </template>
 <script>
@@ -19,23 +22,18 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.display{
+  width: 40%;
+  margin-left: 20rem;
+  margin-right: 20rem;
   text-align: center;
-  color: #2c3e50;
-  background-color: bisque;
-  margin: 0 auto;
 }
-#resume{
-  margin: 0 auto;
+
+#pdf{
+  border: solid black 5px;
 }
-#billboard{*/
-  /*margin-bottom: 5%;*/
-  /*width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  /*background-size: 80% 100%;*/
-/*}*/
+
+button{
+  margin: 1rem;
+}
 </style>

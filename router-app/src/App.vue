@@ -12,20 +12,18 @@
     </div>
     </div>
     <div id='content'>
-      <div class="text" id="intro">
-        <h3><em>Hello!</em></h3>
-        <p>I’m an ambitious software engineer from Omaha, Nebraska. I graduated from the University of Nebraska at Omaha in December of 2020 and now I’m trying to find my next big project. If you’re looking for a dedicated developer, whether for your company, organization, or event, please take a look at my resume! I’d love to be a part of your vision, hope to hear from your soon!</p>
-      </div>
-      <!--<router-view></router-view>-->
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
 import Content from '@/components/Content.vue'
+import Resume from '@/components/Resume.vue'
+import pdf from 'vue-pdf'
 export default {
   name: 'App',
-  components: { Content }
+  components: { Content, pdf, Resume }
 }
 </script>
 
@@ -49,10 +47,9 @@ export default {
   bottom:0;
   right:0;
   left:0;
-  width:auto;
-  height:auto;
+  width:100%;
+  height:50%;
   z-index:-3;
-  height: 100%;
 }
 
 #app h1{
@@ -95,6 +92,10 @@ h1{
   position: left;
   max-width: 50%;
   height: auto;
+}
+
+#contact{
+  margin-top: 1rem;
 }
 
 .me{
